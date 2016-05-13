@@ -5,22 +5,22 @@
   
   <title>css 伪元素 实例详解 | 超越极限</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="（1）伪元素是什么我们平时在写网页时，经常会遇到这种情况：想给一段文字的第一个字设置一个单独的样式？给一个div前面添加一个简单的内容？遇到这样的问题时，我们可以添加html标签，设置css样式来实现，但是，如果我们了解伪元素，相信你会常用它的。">
+  <meta name="description" content="（1）伪元素是什么">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css 伪元素 实例详解">
 <meta property="og:url" content="http://yoursite.com/2016/05/12/博客/index.html">
 <meta property="og:site_name" content="超越极限">
-<meta property="og:description" content="（1）伪元素是什么我们平时在写网页时，经常会遇到这种情况：想给一段文字的第一个字设置一个单独的样式？给一个div前面添加一个简单的内容？遇到这样的问题时，我们可以添加html标签，设置css样式来实现，但是，如果我们了解伪元素，相信你会常用它的。">
+<meta property="og:description" content="（1）伪元素是什么">
 <meta property="og:image" content="http://o71pfzm86.bkt.clouddn.com/QQ20160512-4.png">
 <meta property="og:image" content="http://o71pfzm86.bkt.clouddn.com/QQ20160512-1.png">
 <meta property="og:image" content="http://o71pfzm86.bkt.clouddn.com/QQ20160512-2.png">
 <meta property="og:image" content="http://o71pfzm86.bkt.clouddn.com/QQ20160512-5.png">
 <meta property="og:image" content="http://o71pfzm86.bkt.clouddn.com/QQ20160512-3.png">
 <meta property="og:image" content="http://o71pfzm86.bkt.clouddn.com/QQ20160512-6.png">
-<meta property="og:updated_time" content="2016-05-12T14:55:14.000Z">
+<meta property="og:updated_time" content="2016-05-13T01:11:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css 伪元素 实例详解">
-<meta name="twitter:description" content="（1）伪元素是什么我们平时在写网页时，经常会遇到这种情况：想给一段文字的第一个字设置一个单独的样式？给一个div前面添加一个简单的内容？遇到这样的问题时，我们可以添加html标签，设置css样式来实现，但是，如果我们了解伪元素，相信你会常用它的。">
+<meta name="twitter:description" content="（1）伪元素是什么">
 <meta name="twitter:image" content="http://o71pfzm86.bkt.clouddn.com/QQ20160512-4.png">
   
     <link rel="alternate" href="/atom.xml" title="超越极限" type="application/atom+xml">
@@ -59,9 +59,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -92,10 +92,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="（1）伪元素是什么"><a href="#（1）伪元素是什么" class="headerlink" title="（1）伪元素是什么"></a>（1）伪元素是什么</h2><p>我们平时在写网页时，经常会遇到这种情况：想给一段文字的第一个字设置一个单独的样式？给一个div前面添加一个简单的内容？遇到这样的问题时，我们可以添加html标签，设置css样式来实现，但是，如果我们了解<strong>伪元素</strong>，相信你会常用它的。</p>
-<a id="more"></a>
+        <h2 id="（1）伪元素是什么"><a href="#（1）伪元素是什么" class="headerlink" title="（1）伪元素是什么"></a>（1）伪元素是什么</h2><a id="more"></a>
+<p>我们平时在写网页时，经常会遇到这种情况：想给一段文字的第一个字设置一个单独的样式？给一个div前面添加一个简单的内容？遇到这样的问题时，我们可以添加html标签，设置css样式来实现，但是，如果我们了解<strong>伪元素</strong>，相信你会常用它的。</p>
 <p><strong>伪元素</strong>控制的内容实际上和元素是相同的，但是它本身只是基于元素的抽象，并不存在于文档中，所以叫伪元素。</p>
-<h2 id="（2）伪元素有哪些"><a href="#（2）伪元素有哪些" class="headerlink" title="（2）伪元素有哪些"></a>（2）伪元素有哪些</h2><ol>
+<h2 id="（2）伪元素有哪些"><a href="#（2）伪元素有哪些" class="headerlink" title="（2）伪元素有哪些"></a>（2）伪元素有哪些</h2><!-- more -->
+<ol>
 <li><p>:first-letter<br>伪元素的样式将应用于元素文本的第一个字（母）。</p>
 </li>
 <li><p>:first-line<br>伪元素的样式将应用于元素文本的第一行。</p>
@@ -108,7 +109,8 @@
 </li>
 </ol>
 <pre><code>**为了和伪类区别，建议在写伪元素的时候，用两个冒号**
-</code></pre><h2 id="（3）用法"><a href="#（3）用法" class="headerlink" title="（3）用法"></a>（3）用法</h2><p>首先我创建了一个背景蓝色的div，内容为九寨沟的介绍</p>
+</code></pre><h2 id="（3）用法"><a href="#（3）用法" class="headerlink" title="（3）用法"></a>（3）用法</h2><!-- more -->
+<p>首先我创建了一个背景蓝色的div，内容为九寨沟的介绍</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -200,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/12/博客/" data-id="cio4favwd0001ciidk5wlwz4f" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/05/12/博客/" data-id="cio515dl50000dgidzsm24i0z" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
@@ -213,7 +215,7 @@
   
   
     <a href="/2016/05/11/我的第二个/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title"></div>
     </a>
   
@@ -231,7 +233,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/">css</a></li></ul>
     </div>
@@ -241,7 +243,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
       <a href="/tags/css/" style="font-size: 10px;">css</a>
     </div>
@@ -260,7 +262,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -270,10 +272,6 @@
         
           <li>
             <a href="/2016/05/11/我的第二个/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2016/05/11/我的第一个博客/">我的第一个博客</a>
           </li>
         
           <li>
@@ -293,7 +291,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
